@@ -44,11 +44,11 @@ a {
 }
 
 hr {
-  width: 100vw;
+  width: 100%;
 }
 
 .nav-center {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   backdrop-filter: blur(14px);
@@ -326,7 +326,7 @@ hr {
 }
 
 .card:hover {
-  transform: translateY(-20px);
+  transform: translateY(-1.2rem);
 }
 
 .card-img {
@@ -418,6 +418,27 @@ hr {
 
 .copyright-symbol {
   color: var(--accent-color);
+}
+
+.home-button {
+  font-size: 1.8rem;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  padding: 0.2rem 0.3rem;
+  border-radius: 6px;
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  display: none;
+  transition: all 0.4s ease;
+}
+
+.home-button:hover {
+  transform: scale(1.1);
+}
+
+.show-home-button {
+  display: block;
 }
 
 @media (max-width: 900px) {

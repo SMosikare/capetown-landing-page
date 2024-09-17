@@ -20,3 +20,15 @@ navLinks.forEach((navLink) => {
     navMenu.style.height = 0;
   });
 });
+
+const homeBtn = document.getElementById("home-btn");
+
+window.addEventListener("scroll", () => {
+  const scrollHeight = window.pageYOffset;
+
+  if (scrollHeight > 600) {
+    homeBtn.classList.add("show-home-button");
+  } else {
+    homeBtn.classList.remove("show-home-button");
+  }
+});
